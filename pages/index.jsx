@@ -1,16 +1,17 @@
-import React from 'react'
+import Layout from '../app/components/layout/Layout'
+import TodoList from '../app/components/screens/TodoList/TodoList'
 
 const Main = () => {
     return (
-        <h2>Main</h2>
+        <TodoList />
     )
 }
 
 Main.getLayout = (page) => {
     return (
-        <div>
+        <Layout title={'Главная страница'}>
             {page}
-        </div>
+        </Layout>
     )
 }
 
