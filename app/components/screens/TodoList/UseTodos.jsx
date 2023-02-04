@@ -3,7 +3,7 @@ import { TodoServices } from '../../../services/Todo/Todo.service'
 
 const useTodos = () => {
     return useQuery(
-        ['todos'],
+        'todos',
         () => TodoServices.getAllTodo(),
         {
             select: (data) => (data.slice(0, 5))
